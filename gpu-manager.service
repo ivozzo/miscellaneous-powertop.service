@@ -3,7 +3,7 @@ Description=GPU manager (through acpi calls)
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/sh /usr/share/acpi_call/examples/turn-off_gpu.sh
+ExecStart=/usr/bin/sh /usr/share/acpi_call/examples/turn_off_gpu.sh
 RemainAfterExit=true
 
 [Install]
