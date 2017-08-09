@@ -1,0 +1,10 @@
+[Unit]
+Description=GPU manager (through acpi calls)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/sh /usr/share/acpi_call/examples/turn-off_gpu.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,15 +1,18 @@
-# Powertop Service 
+# Systemd service collection 
 
-Powertop Service file, enabling this will start powertop with autotune option
+This is a collection of custom systemd services.
+
+## Description
+
+Service | Description
+---------|---------
+ powertop.service | enabling this will start powertop with --auto-tune option
+ gou-manager.service | enabling this will send OFF signal to discrete GPU through acpi_call (you'll have to load the module on kernel)
+
 
 ## Usage
 
-Link this file in /etc/systemd/system with
-```
-ln -s <this file> /etc/systemd/system/powertop.service
-```
+Copy this file in /etc/systemd/system with ```cp myService.service /etc/systemd/system/```
+and then enable it with ```systemctl enable myService.service```
 
-or copy it with
-```
-mv <this file> /etc/systemd/system/
-```
+You can then reboot or simply start the service with ```systemctl start myService.service```
