@@ -7,7 +7,7 @@ This is a collection of custom systemd services.
 Service | Description
 ---------|---------
  powertop.service | enabling this will start powertop with --auto-tune option
- gou-manager.service | enabling this will send OFF signal to discrete GPU through acpi_call (you'll have to load the module on kernel)
+ gpu-manager.service | enabling this will send OFF signal to discrete GPU through acpi_call (you'll have to load the module on kernel)
 
 
 ## Usage
